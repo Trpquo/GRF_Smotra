@@ -66,3 +66,14 @@ $(window).load(function() { // makes sure the whole site is loaded
 //]]>
 
 
+
+// HERO VIDEO
+
+const hero = {}
+hero.container = document.querySelector("#HOME .section_overlay")
+hero.video = document.querySelector("#hero-video video")
+// hero.video.width = window.innerWidth * 0.96
+// hero.container.style.height = hero.video.clientHeight + "px"
+hero.video.playbackRate = .5
+hero.video.volume = 0
+hero.video.loop = hero.video.autoplay = true
